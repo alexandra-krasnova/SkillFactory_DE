@@ -5,7 +5,7 @@ create table if not exists melaer_staging.sities (
     accentcity string,
     region int,
     population int,
-    latitude int,
-    longitude string
+    latitude decimal(20,17),
+    longitude decimal(20,17)
 )
 comment 'City table - for data in MySQL table skillfactory.cities'
