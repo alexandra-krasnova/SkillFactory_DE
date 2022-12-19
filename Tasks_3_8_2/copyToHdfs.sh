@@ -26,13 +26,15 @@ fi
 # для удаления директории - все сделали, возвращаемся
 if [ -z "$hdfsName" ]; then
 	echo "Done"
-	exit 1
+	exit 0
 
 # копирование
 hdfs dfs -put -f $fileName "$hdfsDir/$hdfsName" >ak_hdfs_stdout.txt 2>ak_hdfs_stderr.txt
 
 if [ $? -eq 0 ]; then
 	echo "Done"
+	exit 0
 else
 	echo "There were errors while copying, check ak_hdfs_stderr.txt"
+	exit 1
 fi

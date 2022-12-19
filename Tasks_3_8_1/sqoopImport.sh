@@ -13,6 +13,6 @@ export JAVA_HOME="/usr"
 
 /usr/lib/sqoop/bin/sqoop import --connect 'jdbc:mysql://10.93.1.9/skillfactory' \
     --username mysql --password arenadata --hive-import -m 1 \
-    --table $tabName --hive-table ${dbName}.$tabName
+    --table $tabName --hive-table $dbName.$tabName
 
 echo "Done"

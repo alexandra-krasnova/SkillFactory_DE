@@ -13,6 +13,8 @@ beeline -f $sql_file >ak_hive_stdout.txt 2>ak_hive_stderr.txt
 
 if [ $? -eq 0 ]; then
 	echo "Done"
+	exit 0
 else
 	echo "There were errors while hive-ing, check ak_hive_stderr.txt"
+	exit 1
 fi
