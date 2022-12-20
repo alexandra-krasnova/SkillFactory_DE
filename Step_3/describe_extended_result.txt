@@ -1,0 +1,110 @@
+describe extended akrasnova_staging.cities
+
+col_name,data_type,comment
+country,string,
+city,string,
+accentcity,string,
+region,string,
+population,double,
+latitude,double,
+longitude,double,
+,null,null
+Detailed Table Information,"Table(tableName:cities, dbName:akrasnova_staging, owner:zeppelin, createTime:1671442286, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:city, type:string, comment:null), FieldSchema(name:accentcity, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:double, comment:null), FieldSchema(name:latitude, type:double, comment:null), FieldSchema(name:longitude, type:double, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/cities, inputFormat:org.apache.hadoop.mapred.TextInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe, parameters:{serialization.format=, line.delim=\n, field.delim=}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671442287, bucketing_version=2, comment=Imported by sqoop on 2022/12/19 09:31:15, totalSize=115081794, numFiles=1}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
+
+describe extended akrasnova_staging.nobel_laureates
+
+col_name,data_type,comment
+year,string,
+category,string,
+prize,string,
+motivation,string,
+prize_share,string,
+laureate_id,string,
+laureate_type,string,
+full_name,string,
+birth_date,string,
+birth_city,string,
+birth_country,string,
+sex,string,
+organization_name,string,
+organization_city,string,
+organization_country,string,
+deathdate,string,
+death_city,string,
+death_country,string,
+,null,null
+Detailed Table Information,"Table(tableName:nobel_laureates, dbName:akrasnova_staging, owner:hive, createTime:1671458697, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:year, type:string, comment:null), FieldSchema(name:category, type:string, comment:null), FieldSchema(name:prize, type:string, comment:null), FieldSchema(name:motivation, type:string, comment:null), FieldSchema(name:prize_share, type:string, comment:null), FieldSchema(name:laureate_id, type:string, comment:null), FieldSchema(name:laureate_type, type:string, comment:null), FieldSchema(name:full_name, type:string, comment:null), FieldSchema(name:birth_date, type:string, comment:null), FieldSchema(name:birth_city, type:string, comment:null), FieldSchema(name:birth_country, type:string, comment:null), FieldSchema(name:sex, type:string, comment:null), FieldSchema(name:organization_name, type:string, comment:null), FieldSchema(name:organization_city, type:string, comment:null), FieldSchema(name:organization_country, type:string, comment:null), FieldSchema(name:deathdate, type:string, comment:null), FieldSchema(name:death_city, type:string, comment:null), FieldSchema(name:death_country, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/nobel_laureates, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671458697, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
+
+describe extended akrasnova_staging.countries_of_the_world
+
+col_name,data_type,comment
+country,string,
+region,string,
+population,string,
+area_sq_mi,string,
+pop_density_per_sq_mi,string,
+coastline,string,
+net_migration,string,
+infant_mortality_per_1000_births,string,
+gdp_dol_per_capita,string,
+literacy_percent,string,
+phones_per_1000,string,
+arable_percent,string,
+crops_percent,string,
+other_percent,string,
+climate,string,
+birthrate,string,
+deathrate,string,
+agriculture,string,
+industry,string,
+service,string,
+,null,null
+Detailed Table Information,"Table(tableName:countries_of_the_world, dbName:akrasnova_staging, owner:hive, createTime:1671463396, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:string, comment:null), FieldSchema(name:area_sq_mi, type:string, comment:null), FieldSchema(name:pop_density_per_sq_mi, type:string, comment:null), FieldSchema(name:coastline, type:string, comment:null), FieldSchema(name:net_migration, type:string, comment:null), FieldSchema(name:infant_mortality_per_1000_births, type:string, comment:null), FieldSchema(name:gdp_dol_per_capita, type:string, comment:null), FieldSchema(name:literacy_percent, type:string, comment:null), FieldSchema(name:phones_per_1000, type:string, comment:null), FieldSchema(name:arable_percent, type:string, comment:null), FieldSchema(name:crops_percent, type:string, comment:null), FieldSchema(name:other_percent, type:string, comment:null), FieldSchema(name:climate, type:string, comment:null), FieldSchema(name:birthrate, type:string, comment:null), FieldSchema(name:deathrate, type:string, comment:null), FieldSchema(name:agriculture, type:string, comment:null), FieldSchema(name:industry, type:string, comment:null), FieldSchema(name:service, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/countries_of_the_world, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671463396, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
+
+describe extended akrasnova_staging.country_continents
+
+col_name,data_type,comment
+country,string,
+continent,string,
+,null,null
+Detailed Table Information,"Table(tableName:country_continents, dbName:akrasnova_staging, owner:hive, createTime:1671503651, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:continent, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/country_continents, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671503651, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
+
+describe extended akrasnova_staging.country_currencies
+
+col_name,data_type,comment
+country,string,
+currency,string,
+,null,null
+Detailed Table Information,"Table(tableName:country_currencies, dbName:akrasnova_staging, owner:hive, createTime:1671503700, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:currency, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/country_currencies, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671503700, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
+
+describe extended akrasnova_staging.country_iso3
+
+col_name,data_type,comment
+country,string,
+iso3,string,
+,null,null
+Detailed Table Information,"Table(tableName:country_iso3, dbName:akrasnova_staging, owner:hive, createTime:1671503723, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:iso3, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/country_iso3, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671503723, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
+
+describe extended akrasnova_staging.country_names
+
+col_name,data_type,comment
+country,string,
+name,string,
+,null,null
+Detailed Table Information,"Table(tableName:country_names, dbName:akrasnova_staging, owner:hive, createTime:1671503745, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:name, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/country_names, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671503745, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
+
+describe extended akrasnova_staging.country_phones
+
+col_name,data_type,comment
+country,string,
+phone,string,
+,null,null
+Detailed Table Information,"Table(tableName:country_phones, dbName:akrasnova_staging, owner:hive, createTime:1671503768, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:phone, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/country_phones, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671503768, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
+
+describe extended akrasnova_staging.country_capital
+
+col_name,data_type,comment
+country,string,
+capital,string,
+,null,null
+Detailed Table Information,"Table(tableName:country_capital, dbName:akrasnova_staging, owner:hive, createTime:1671503790, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:capital, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/akrasnova_staging.db/country_capital, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1671503790, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)",
