@@ -2,7 +2,7 @@ from pyspark.sql import functions as f
 from pyspark.sql import Column as c
 from pyspark.sql.window import Window
 
-from common.start_stop_spark import spark_start, spark_stop
+from dwh_common.start_stop_spark import spark_start, spark_stop
 
 
 # create Dataset table

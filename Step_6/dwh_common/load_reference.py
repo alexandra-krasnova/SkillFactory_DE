@@ -1,6 +1,6 @@
 from pyspark.sql import functions as f
 
-from common.start_stop_spark import spark_start, spark_stop
+from dwh_common.start_stop_spark import spark_start, spark_stop
 
 
 # create simple reference tables in Data Warehouse from the Nobel Laureates dataset

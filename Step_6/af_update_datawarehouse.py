@@ -9,13 +9,13 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.empty import EmptyOperator
 
-from common.preprocessing import createTmpCountriesTbl, createTmpLaureatesTbl, createTmpCitiesTbl
-from common.load_countries_cities import loadCountries, loadCodesInCountries, loadCities
-from common.load_reference import loadFromNobelDf
-from common.load_laureates_orgs import loadLaureates, loadOrganizations, loadPersonsInOrgs
-from common.load_nobel_prizes import loadNobelPrizes
-from common.load_dataset import loadDataset
-from common.hive_commands import DROP_DELTA_TABLES
+from dwh_common.preprocessing import createTmpCountriesTbl, createTmpLaureatesTbl, createTmpCitiesTbl
+from dwh_common.load_countries_cities import loadCountries, loadCodesInCountries, loadCities
+from dwh_common.load_reference import loadFromNobelDf
+from dwh_common.load_laureates_orgs import loadLaureates, loadOrganizations, loadPersonsInOrgs
+from dwh_common.load_nobel_prizes import loadNobelPrizes
+from dwh_common.load_dataset import loadDataset
+from dwh_common.hive_commands import DROP_DELTA_TABLES
 
 
 # Данный граф представляет собой загрузку обновленных данных из Staging в DWH, загрузка будет происходить не вот все таблицы DWH
